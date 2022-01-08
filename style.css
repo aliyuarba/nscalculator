@@ -18,25 +18,18 @@ body {
   height: 40vh;
   display: flex;
   flex-direction: column;
-  justify-content: end;
 }
-/* .display h1 {
-  text-transform: uppercase;
-  text-align: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  padding: 4px;
-  color: #fff;
-  margin-bottom: auto;
-} */
+.whitespace {
+  flex: 1;
+}
 .history {
   text-align: right;
   color: rgba(0, 0, 0, 0.685);
+  padding: .7rem 0;
 }
 .result {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  height: 40%;
+  text-align: right;
+  height: 4rem;
   font-size: 2rem;
 }
 .keys {
