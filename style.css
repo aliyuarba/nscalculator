@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
+}
+body {
+  display: flex;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.display {
+  text-align: right;
+  padding: 1rem;
+  height: 40vh;
+  display: flex;
+  flex-direction: column; 
+}
+.history {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 40%;
+  color: rgba(0, 0, 0, 0.685);
+}
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 60%;
+  font-size: 2rem;
+}
+.keys {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.keys button {
+  padding: 0.67rem;
+  font-size: 2rem;
+  border: none;
+  border-bottom: .1px solid rgba(0, 0, 0, 0.125);
+  border-right: .1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0;
+  cursor: pointer;
+}
+.keys button:nth-child(17) {
+  grid-column: 1/3;
+}
+.keys button.operator {
+  background-color: rgb(182, 169, 55);
+}
+.keys button:last-child {
+  background-color: seagreen;
+}
+
+.keys button:hover {
+  background-color: #333;
+  color: white;
+  transition: 200ms;
+}
+
+@media (max-height: 468px){
+  .keys {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .keys button:nth-child(5){
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .keys button:nth-child(6){
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .keys button:nth-child(7){
+    grid-column: 4;
+    grid-row: 1;
+  }
+  .keys button:nth-child(9){
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .keys button:nth-child(10){
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .keys button:nth-child(11){
+    grid-column: 4;
+    grid-row: 2;
+  }
+  .keys button:nth-child(13){
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .keys button:nth-child(14){
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .keys button:nth-child(15){
+    grid-column: 4;
+    grid-row: 3;
+  }
+  .keys button:nth-child(18) {
+    grid-column: 5;
+    grid-row: 3;
+  }
+  .keys button:nth-child(17) {
+    grid-column: 1;
+    grid-row: 1/4;
+  }
+  .keys button:nth-child(3) {
+    grid-column: 5;
+    grid-row: 3;
+  }
+  .keys button:nth-child(1) {
+    grid-column: 7;
+    grid-row: 1;
+  }
+  .keys button:nth-child(2) {
+    grid-column: 7;
+    grid-row: 2;
+  }
+  .keys button:last-child {
+    grid-column: 6/8;
+    grid-row: 3;
+  }
+}
