@@ -17,27 +17,26 @@ body {
   padding: 0 1rem;
   height: 40vh;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+  justify-content: end;
 }
-.display h1 {
+/* .display h1 {
   text-transform: uppercase;
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   padding: 4px;
   color: #fff;
-}
+  margin-bottom: auto;
+} */
 .history {
-  display: flex;
-  align-items:flex-end;
-  justify-content: end;
-  height: 40%;
+  text-align: right;
   color: rgba(0, 0, 0, 0.685);
 }
 .result {
   display: flex;
   align-items: center;
   justify-content: end;
-  height: 60%;
+  height: 40%;
   font-size: 2rem;
 }
 .keys {
