@@ -14,15 +14,21 @@ body {
   flex-direction: column;
 }
 .display {
-  text-align: right;
-  padding: 1rem;
+  padding: 0 1rem;
   height: 40vh;
   display: flex;
   flex-direction: column; 
 }
+.display h1 {
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 4px;
+  color: #fff;
+}
 .history {
   display: flex;
-  align-items: center;
+  align-items:flex-end;
   justify-content: end;
   height: 40%;
   color: rgba(0, 0, 0, 0.685);
