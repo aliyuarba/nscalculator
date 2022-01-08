@@ -64,7 +64,7 @@ body {
   transition: 200ms;
 }
 
-@media (max-height: 380px){
+@media (orientation: landscape){
   .keys {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
